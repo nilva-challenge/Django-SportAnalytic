@@ -32,8 +32,11 @@ We want clean, readable, and maintainable code with meaningful comments and docs
 
 ### API Endpoints:
 
-- GET /analytics/summary/: Retrieve a summary of analytics for a specified date range (fields: start_date, end_date)
-- GET /analytics/top-teams/: Retrieve the top teams based on wins or goals scored over a specified date range (fields: start_date, end_date, metric)
+- GET /analytics/summary/?start=<YYYY-MM-dd>&end=<YYYY-MM-dd>: Retrieve a summary of analytics for a specified date range (fields: start_date, end_date), summary is:
+  - Total number of games played
+  - Average goals scored per game
+  - Win/loss ratios for teams
+- GET /analytics/top-teams/?start=<YYYY-MM-dd>&end=<YYYY-MM-dd>: Retrieve the 5 top teams based on each metric over a specified date range (fields: start_date, end_date, metric)
 
 ### Data Extraction and Storage:
 
@@ -45,10 +48,10 @@ Cache fixture data using Redis for faster subsequent retrieval and implement a f
 ### Analytics and Insights:
 
 Analyze the stored fixture data to generate summaries, such as:
-Total number of games played
-Average goals scored per game
-Win/loss ratios for teams
-Identify and retrieve the top teams based on specific metrics (e.g., most wins, highest goals scored).
+- Total number of games played
+- Average goals scored per game
+- Win/loss ratios for teams
+Identify and retrieve the top teams based on each metric.
 
 ### Caching with Redis:
 
