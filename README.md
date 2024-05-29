@@ -11,7 +11,7 @@ By the end of this challenge, you should have a robust backend system capable of
 ### Key Features:
 - Integration with a sports API to retrieve fixtures
 - Storage and analysis of fixture data over a specified date range
-- Caching with Redis to improve performance and fallback mechanism using a database cache
+- Caching with Redis to improve performance and fallback mechanism using a database cache (advanced)
 - Generation of summaries and insights based on the collected data
 - Providing API documentation and ensuring code quality
 
@@ -56,7 +56,9 @@ Identify and retrieve the top teams based on each metric.
 ### Caching with Redis:
 
 Use Redis to cache fixture data responses to improve performance.
-Implement a fallback mechanism to retrieve data from the database cache if Redis fails.
+Implement a fallback mechanism to retrieve data from the database cache if Redis fails. (advanced)
+
+\***note** that advanced marked features are not necessary to implement, they are considered extra points.\*
 
 ### Error Handling:
 
