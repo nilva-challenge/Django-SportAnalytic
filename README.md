@@ -32,11 +32,11 @@ We want clean, readable, and maintainable code with meaningful comments and docs
 
 ### API Endpoints:
 
-- GET /analytics/summary/?start=<YYYY-MM-dd>&end=<YYYY-MM-dd>: Retrieve a summary of analytics for a specified date range (fields: start_date, end_date), summary is:
+- GET /analytics/summary/?start=\<YYYY-MM-dd\>&end=\<YYYY-MM-dd\>: Retrieve a summary of analytics for a specified date range (fields: start_date, end_date), summary is:
   - Total number of games played
   - Average goals scored per game
   - Win/loss ratios for teams
-- GET /analytics/top-teams/?start=<YYYY-MM-dd>&end=<YYYY-MM-dd>: Retrieve the 5 top teams based on each metric over a specified date range (fields: start_date, end_date, metric)
+- GET /analytics/top-teams/?start=\<YYYY-MM-dd\>&end=\<YYYY-MM-dd\>: Retrieve the 5 top teams based on each metric over a specified date range (fields: start_date, end_date, metric)
 
 ### Data Extraction and Storage:
 
